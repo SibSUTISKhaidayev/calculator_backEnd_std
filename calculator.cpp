@@ -40,6 +40,18 @@ double calculator::cosinus(const double radians)
     return cos(radians);
 }
 
+double calculator::tangens(const double radians)
+{
+    return tan(radians);
+}
+
+double calculator::cotangens(const double radians)
+{
+    return 1/tan(radians);
+}
+
+
+
 double calculator::arcSinus(const double arg)
 {
     return asin(arg);
