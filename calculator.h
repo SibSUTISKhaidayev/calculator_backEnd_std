@@ -9,23 +9,46 @@ using namespace std;
 
 class calculator
 {
+private:
+
 public:
+    //foundation methods
+    template<typename T>
+    static T summa(const T a,
+                   const T b);
+    template<typename T>
+    static T differens(const T a,
+                       const T b);
+    template<typename T>
+    static T multiplication(const T a,
+                            const T b);
 
     template<typename T>
-    static T summa(const T a, const T b);
+    static T segmentation(const T a,
+                          const T b);
+
+    double ixtent(const double foundation,
+                  const double deegreePointer);
+    //expressions methods
+        //trigonometric funcsions
+    static double sinus(const double radians);
+    static double cosinus(const double radians);
+    static double tangens(const double radians);
+    static double cotangens(const double radians);
+    static double arcSinus(const double arg);
+    static double arcCosinus(const double arg);
+    static double arcTangens(const double arg);
+    static double arcCotangens(const double arg);
+
+    static long long int factorial(const long long int arg);
+    static double naturalLogorifm(const double arg);
+    static double decimalLogorifm(const double arg);
+
+    static double exponent();
     template<typename T>
-    static T differens(T a, T b);
+    static double stdForm(const T arg);
     template<typename T>
-    static T multiplication(T a, T b);
-    template<typename T>
-    static T segmentation(T a, T b);
-
-    static double degree(const double a, const double b);
-
-    static double sinus(const double a);
-    static double cosinus(const double a);
-
-
+    static long long int mode(const T arg);
 };
 
 
