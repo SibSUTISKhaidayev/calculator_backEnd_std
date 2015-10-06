@@ -62,5 +62,17 @@ double calculator::arcCosinus(const double arg)
     return acos(arg);
 }
 
+double calculator::arcTangens(const double arg)
+{
+    return atan(arg);
+}
 
+double calculator::arcCotangens(const double arg)
+{
+    a = atan(arg);
+    a = M_PI_2 - a;
+
+
+    return
+}
 
